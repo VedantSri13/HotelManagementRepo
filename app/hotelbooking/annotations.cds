@@ -1,0 +1,1 @@
+using HotelService as service from '../../srv/service';

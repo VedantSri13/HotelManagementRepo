@@ -1,0 +1,20 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+ 
+    <SelectDialog
+        id="delivery"
+        noDataText="No Data Found"
+        title="Select Location"
+        search="onValueHelpSearch"
+        confirm="onValueHelpClose"
+        cancel="onValueHelpClose"
+        liveChange="onValueHelpSearch"
+        items="{/Hotels}">
+        <StandardListItem id="_IDGenStdardsttem5"
+            title="{location}"
+            iconDensityAware="false"
+            iconInset="false"
+            type="Active" />
+    </SelectDialog>
+</core:FragmentDefinition>

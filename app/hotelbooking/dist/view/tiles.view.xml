@@ -1,0 +1,66 @@
+<mvc:View controllerName="hotelbooking.controller.tiles"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:layout="sap.ui.layout"
+	xmlns:microchart="sap.suite.ui.microchart">
+    <Page id="page" title="{i18n>title}">
+        	<layout:VerticalLayout class="sapUiResponsiveMargin">
+			<Title
+				titleStyle="H2"
+				text="Welcome to Hotel Booking System"
+				class="sapUiTinyMarginBegin"/>
+			<layout:HorizontalLayout allowWrapping="true">
+				<GenericTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					header="Available Hotels"
+					subheader="Across Location"
+					press=".onNavToHotels">
+					<tileContent>
+						<TileContent>
+							<content>
+								<NumericContent
+									value="{
+										 path: 'viewModel>/Hotels',
+                                        formatter: '.getHotelsCount'
+									}"
+									icon="sap-icon://addresses"/>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+				<GenericTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					header="My Bookings"
+                    subheader="Profile">
+					<tileContent>
+						<TileContent>
+							<content>
+								<NumericContent
+									value="{
+										path: 'reviews>/UserReviews',
+										formatter: '.getEntityCount'
+									}"
+									icon="sap-icon://personnel-view"/>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+				<GenericTile
+					class="sapUiTinyMarginBegin sapUiTinyMarginTop"
+					header="Admin"
+					subheader="Special Access"
+					press=".onNavToChartContainer">
+					<tileContent>
+						<TileContent>
+							<content>
+								<ImageContent src="sap-icon://key-user-settings"/>
+							</content>
+						</TileContent>
+					</tileContent>
+				</GenericTile>
+				
+			</layout:HorizontalLayout>
+			
+		</layout:VerticalLayout>
+    </Page>
+</mvc:View>

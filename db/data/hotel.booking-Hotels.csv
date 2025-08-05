@@ -1,0 +1,20 @@
+hotelID,name,location,rating,totalRooms,availableRooms,pricePerNight,description
+3d364999-92ab-4d98-aa56-8d81f80feff2,Sunrise Inn,New Delhi,3,50,30,3500,A comfortable stay at Sunrise Inn in New Delhi
+2c716cc6-9862-4a26-a3d3-fe44ad140a17,Ocean View,Mumbai,3.3,100,60,5500,A comfortable stay at Ocean View in Mumbai
+9d3a1466-4d36-4326-9418-682055318683,Hilltop Stay,Shimla,3.2,40,25,4000,A comfortable stay at Hilltop Stay in Shimla
+c8051773-9c08-49ac-a76f-706547f58efd,Royal Residency,Jaipur,4.7,80,50,4800,A comfortable stay at Royal Residency in Jaipur
+daedc024-a575-475b-b906-ffe3e61cab6f,Cityscape Hotel,Bangalore,3.1,70,35,5200,A comfortable stay at Cityscape Hotel in Bangalore
+ba68a291-4f24-4ebc-baae-1c577eb48795,Blue Lagoon,Ahmedabad,3.1,75,74,6806,Unwind in style and elegance. Welcome to Blue Lagoon in Ahmedabad.
+ff0f974b-e0cd-4e0a-9e1f-9387d67cd551,Heritage Haven,Bhopal,4.4,86,51,3495,Ideal for family vacations. Welcome to Heritage Haven in Bhopal.
+66009590-db7a-4814-ab8a-c7c1b02b9e08,Serene Stay,Udaipur,4.9,42,23,6891,Experience luxury and comfort. Welcome to Serene Stay in Udaipur.
+9a57f1a8-54e0-427b-96b7-561257b3d515,Tranquil Towers,Pune,3.0,54,30,4183,Ideal for family vacations. Welcome to Tranquil Towers in Pune.
+5e5aa608-5bc0-408f-8699-128616e6d5e1,Golden Leaf,Udaipur,4.9,49,41,7178,Experience luxury and comfort. Welcome to Golden Leaf in Udaipur.
+eced7dc6-5731-4c47-9942-05187130750e,Grand Palace,Lucknow,3.1,100,69,3597,A home away from home. Welcome to Grand Palace in Lucknow.
+ee85faec-bb72-441f-9303-68f29de6e44b,Blue Lagoon,Bhopal,4.5,85,59,6672,Experience luxury and comfort. Welcome to Blue Lagoon in Bhopal.
+080bba04-9cc3-48ca-9b1d-30929f3af43e,Majestic Meadows,Bhopal,5.0,100,65,6815,Ideal for family vacations. Welcome to Majestic Meadows in Bhopal.
+173d2e2c-751c-44c2-bc40-632543adb4ac,Skyline Suites,Kochi,4.1,43,40,7625,Ideal for family vacations. Welcome to Skyline Suites in Kochi.
+73d1eb8d-e602-4c6a-8b49-8ab0ace036b5,Palm Grove,Ahmedabad,3.5,78,77,3323,Ideal for family vacations. Welcome to Palm Grove in Ahmedabad.
+e25400f3-0b6f-47fb-8fcb-f99713ca0bc7,Valley View,Ahmedabad,3.0,60,38,6761,Located in the heart of the city. Welcome to Valley View in Ahmedabad.
+dce5a6a1-07df-4a93-9475-8de9c4750d10,Metro Residency,Bhopal,3.8,48,29,7189,Ideal for family vacations. Welcome to Metro Residency in Bhopal.
+fc67eacd-05fa-40cc-acb5-049184977426,Silver Sands,Lucknow,3.3,78,55,5682,Unwind in style and elegance. Welcome to Silver Sands in Lucknow.
+bbb537fa-44e0-4518-b669-5654f444a66b,Metro Residency,Chennai,4.9,100,93,4576,Experience luxury and comfort. Welcome to Metro Residency in Chennai.

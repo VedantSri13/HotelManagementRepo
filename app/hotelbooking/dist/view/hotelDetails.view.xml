@@ -1,0 +1,108 @@
+<mvc:View
+    controllerName="hotelbooking.controller.hotelDetails"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:fb="sap.ui.comp.filterbar"
+    xmlns:l="sap.ui.layout"
+>
+    <Page title="Hotels">
+        <fb:FilterBar
+            id="filterbar"
+            search="onSearch"
+            filterChange="onFilterChange"
+        >
+            <fb:filterItems>
+                <fb:FilterItem
+                    name="Location"
+                    label="Location"
+                >
+                    <fb:control>
+                        <Input
+                        id="locationid"
+                            showValueHelp="true"
+                            value=""
+                            valueHelpRequest=".onLocations"
+                        />
+                    </fb:control>
+                </fb:FilterItem>
+
+                <fb:FilterItem
+                    name="Price"
+                    label="Price"
+                >
+                    <fb:control>
+                        <ComboBox id="priceCombo">
+                            <core:Item key="1" text="Below ₹3000" />
+                            <core:Item key="2" text="₹3000 - ₹5000" />
+                            <core:Item key="3" text="₹5000 - ₹7000" />
+                            <core:Item key="4" text="Above ₹7000" />
+                        </ComboBox>
+                    </fb:control>
+                </fb:FilterItem>
+                <fb:FilterItem
+                    name="Rating"
+                    label="Rating"
+                >
+                    <fb:control>
+                        <ComboBox
+                                items="{
+                                path: '/Hotels'
+                            }"
+                            id="ratingCombo"
+                        >
+                            <core:Item
+                                key="{rating}"
+                                text="{rating}"
+                            />
+                        </ComboBox>
+                    </fb:control>
+                </fb:FilterItem>
+            </fb:filterItems>
+        </fb:FilterBar>
+
+        <Table
+            id="studentsTable"
+            mode="SingleSelectMaster"
+            items="{/Hotels}"
+            selectionChange=".onPress"
+        >
+            <columns>
+                <Column>
+                    <Text text="Name" />
+                </Column>
+                <Column>
+                    <Text text="Location" />
+                </Column>
+                <Column>
+                    <Text text="Total Rooms" />
+                </Column>
+                <Column>
+                    <Text text="Available Rooms" />
+                </Column>
+                <Column>
+                    <Text text="Price Per Night" />
+                </Column>
+                <Column>
+                    <Text text="Description" />
+                </Column>
+                <Column>
+                    <Text text="Rating" />
+                </Column>
+            </columns>
+            <items>
+                <ColumnListItem type="Navigation">
+                    <cells>
+                        <Text text="{name}" />
+                        <Text text="{location}" />
+                        <Text text="{totalRooms}" />
+                        <Text text="{availableRooms}" />
+                        <Text text="{pricePerNight}" />
+                        <Text text="{description}" />
+                        <RatingIndicator maxValue="5" class="sapUiSmallMarginBottom" value="{rating}" iconSize="22px"/>
+                    </cells>
+                </ColumnListItem>
+            </items>
+        </Table>
+    </Page>
+</mvc:View>
